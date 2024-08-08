@@ -8,14 +8,14 @@ from scrapy import signals
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
 
-class HouseCookies(object):
-    def process_request(self, request, spider):
-        if "search" in request.url:
-            request.cookies = {
-                '_clsk': 'naws1f%7C1722931928265%7C49%7C0%7Ct.clarity.ms%2Fcollect',
-                'XSRF-TOKEN': 'eyJpdiI6IjMvaUpYV3hQWGFLT3ZoOCtWSkluSGc9PSIsInZhbHVlIjoidkFGaHcwMy9uREQxeU5waDdZUDZvN0d0dmk0SlNmM2IvcjdTVnY1UmRiak9pT3RRQTgyWmJEOE9qbVZqNVlKWmdBZENNWlVnc0d5NDJJLzlzWlo4a25HZlRWU1V5OHRGVG5XekNwT2NYbHdVSlRqcEhPSEFJY3JwRkp5aEtzMUQiLCJtYWMiOiI5N2EyYjExMWRlMzhmM2VkNDdkNTE3NTczMTA2NjFmYzJkYmE4MzVmNjQzNTdhNjFlODRmYTJkNWU5NGJkNzVmIiwidGFnIjoiIn0%3D',
-                '591_new_session': 'eyJpdiI6IlhlVVNmVHJUeTNhQ3hYR3pYMmRVbFE9PSIsInZhbHVlIjoiL2pJdmFsZC9YaG9RcnZiOTUvYmRDT2FlK0FBV0Zjd1hLVkQxdnZtazJkdEdLV2d0a3JFREUyM2wxeU5WbmRoWExsZHpaTFg5TXA4N1RrRGgrQWZwbFlrckhDbmx0WGdMSHV5RW9sSElOQVpxcjdSajE4OTljQ1NKbVVWaUJ4OGYiLCJtYWMiOiJiNWYxN2U0YTU0MzZmYzEzOWI2OTk0MjNiYWZhZWQwYmUyZTY0Nzg1NTkzNjNhNzE3MmY3Njc5NTk4NTE2ZTMwIiwidGFnIjoiIn0%3D',
-            }
+# class HouseCookies(object):
+#     def process_request(self, request, spider):
+#         if "search" in request.url:
+#             request.cookies = {
+#                 '_clsk': 'naws1f%7C1722931928265%7C49%7C0%7Ct.clarity.ms%2Fcollect',
+#                 'XSRF-TOKEN': 'eyJpdiI6IjMvaUpYV3hQWGFLT3ZoOCtWSkluSGc9PSIsInZhbHVlIjoidkFGaHcwMy9uREQxeU5waDdZUDZvN0d0dmk0SlNmM2IvcjdTVnY1UmRiak9pT3RRQTgyWmJEOE9qbVZqNVlKWmdBZENNWlVnc0d5NDJJLzlzWlo4a25HZlRWU1V5OHRGVG5XekNwT2NYbHdVSlRqcEhPSEFJY3JwRkp5aEtzMUQiLCJtYWMiOiI5N2EyYjExMWRlMzhmM2VkNDdkNTE3NTczMTA2NjFmYzJkYmE4MzVmNjQzNTdhNjFlODRmYTJkNWU5NGJkNzVmIiwidGFnIjoiIn0%3D',
+#                 '591_new_session': 'eyJpdiI6IlhlVVNmVHJUeTNhQ3hYR3pYMmRVbFE9PSIsInZhbHVlIjoiL2pJdmFsZC9YaG9RcnZiOTUvYmRDT2FlK0FBV0Zjd1hLVkQxdnZtazJkdEdLV2d0a3JFREUyM2wxeU5WbmRoWExsZHpaTFg5TXA4N1RrRGgrQWZwbFlrckhDbmx0WGdMSHV5RW9sSElOQVpxcjdSajE4OTljQ1NKbVVWaUJ4OGYiLCJtYWMiOiJiNWYxN2U0YTU0MzZmYzEzOWI2OTk0MjNiYWZhZWQwYmUyZTY0Nzg1NTkzNjNhNzE3MmY3Njc5NTk4NTE2ZTMwIiwidGFnIjoiIn0%3D',
+#             }
 
 
 class ReSpiderMiddleware:
