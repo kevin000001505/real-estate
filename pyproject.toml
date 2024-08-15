@@ -17,6 +17,8 @@ sqlalchemy = "^2.0.32"
 pymysql = "^1.1.1"
 pymongo = "^4.8.0"
 mysql-connector = "^2.2.9"
+dbt-core = "^1.7.0"
+dbt-mysql = "^1.7.0"
 
 
 [tool.poetry.group.dev.dependencies]
